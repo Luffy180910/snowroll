@@ -69,9 +69,9 @@ xueqiu --log-level DEBUG crawl stock --symbol SH600519 --pages 3
 Add this to crontab:
 
 ```cron
-0 9,15,21 * * * cd /path/to/xueqiu_crawler && /usr/bin/env XUEQIU_ENV=prod \
+0 9,15,21 * * * cd /path/to/snowroll && /usr/bin/env XUEQIU_ENV=prod \
     /path/to/venv/bin/xueqiu crawl hot --max-pages 5 \
-    >> /path/to/xueqiu_crawler/logs/cron.log 2>&1
+    >> /path/to/snowroll/logs/cron.log 2>&1
 ```
 
 ### Run forever with a target
