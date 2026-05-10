@@ -1,0 +1,59 @@
+{
+  "list": [
+    {
+      "id": 12345001,
+      "user_id": 9999001,
+      "created_at": 1715337600000,
+      "title": "茅台年报点评",
+      "text": "<p>$贵州茅台(SH600519)$ 业绩稳健,&nbsp;现金流充沛。<a href=\"...\" data-code=\"SH600519\">查看</a></p>",
+      "description": "",
+      "reply_count": 12,
+      "retweet_count": 3,
+      "fav_count": 5,
+      "like_count": 30,
+      "view_count": 1500,
+      "category": "1",
+      "user": {
+        "id": 9999001,
+        "screen_name": "价值投资者",
+        "followers_count": 5000
+      }
+    },
+    {
+      "id": 12345002,
+      "user_id": 9999002,
+      "created_at": 1715424000000,
+      "title": "",
+      "text": "看好新能源板块,$宁德时代(SZ300750)$ 和 $比亚迪(SZ002594)$ 都不错",
+      "reply_count": 0,
+      "retweet_count": 0,
+      "fav_count": 1,
+      "like_count": 8,
+      "view_count": 200,
+      "user": {
+        "id": 9999002,
+        "screen_name": "新能源观察",
+        "followers_count": 1200
+      }
+    },
+    {
+      "status": {
+        "id": 12345003,
+        "user_id": 9999003,
+        "created_at": 1715500000000,
+        "text": "纯文本帖子,无标签",
+        "reply_count": 5,
+        "retweet_count": 0,
+        "fav_count": 0,
+        "like_count": 2,
+        "view_count": 80,
+        "user": {
+          "id": 9999003,
+          "screen_name": "散户老王",
+          "followers_count": 50
+        }
+      }
+    }
+  ],
+  "count": 3
+}

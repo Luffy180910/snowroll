@@ -1,0 +1,19 @@
+# Production overrides. Used when XUEQIU_ENV=prod.
+browser:
+  headless: true
+
+http:
+  request_delay_min: 5.0
+  request_delay_max: 10.0
+  max_retries: 5
+
+storage:
+  backend: postgres
+  # pg_dsn from XUEQIU_PG_DSN env var
+
+crawl:
+  inter_stock_delay_min: 10.0
+  inter_stock_delay_max: 20.0
+
+logging:
+  level: INFO

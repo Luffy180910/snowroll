@@ -1,0 +1,10 @@
+# Development overrides. Used when XUEQIU_ENV=dev.
+browser:
+  headless: false   # show window for debugging
+
+http:
+  request_delay_min: 1.0
+  request_delay_max: 2.0
+
+logging:
+  level: DEBUG

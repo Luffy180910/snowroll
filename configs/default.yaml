@@ -1,0 +1,67 @@
+# Default configuration. Override with configs/dev.yaml or configs/prod.yaml.
+# Environment variables (XUEQIU_*) take precedence over YAML.
+
+browser:
+  headless: true
+  user_data_dir: /tmp/xueqiu_chrome_profile
+  port_range: [9222, 9999]
+  warmup_url: https://xueqiu.com/
+  warmup_stock_url: https://xueqiu.com/S/SZ002580
+  warmup_wait_seconds: 5
+
+http:
+  max_retries: 3
+  request_delay_min: 3.0
+  request_delay_max: 6.0
+  cookie_refresh_interval_seconds: 1200  # 20 minutes
+  retry_backoff_min: 10.0
+  retry_backoff_max: 20.0
+
+storage:
+  backend: sqlite
+  sqlite_path: data/xueqiu.db
+  # pg_dsn: postgresql://user:pass@localhost:5432/xueqiu
+
+crawl:
+  default_max_pages: 10
+  default_source: user      # user | all | trans
+  default_sort: time        # time | alpha
+  page_size: 20
+  inter_stock_delay_min: 5.0
+  inter_stock_delay_max: 10.0
+
+# Hot stocks per market — used by `xueqiu crawl hot`
+hot_stocks:
+  cn_a:
+    - SH600519   # 茅台
+    - SH601318   # 中国平安
+    - SH600036   # 招商银行
+    - SZ000858   # 五粮液
+    - SZ300750   # 宁德时代
+    - SZ002594   # 比亚迪
+    - SH601012   # 隆基绿能
+    - SZ000333   # 美的集团
+    - SH603259   # 药明康德
+    - SH601857   # 中国石油
+  hk:
+    - HK00700    # 腾讯
+    - HK09988    # 阿里
+    - HK01810    # 小米
+    - HK03690    # 美团
+    - HK09618    # 京东
+    - HK09999    # 网易
+  us:
+    - AAPL
+    - NVDA
+    - TSLA
+    - MSFT
+    - AMZN
+    - META
+    - NFLX
+
+logging:
+  level: INFO
+  log_dir: logs
+  log_file: crawler.log
+  rotation_size_mb: 10
+  retention_count: 5
