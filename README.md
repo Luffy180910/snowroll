@@ -2,6 +2,8 @@
 
 Engineering-grade scraper for [雪球 (xueqiu.com)](https://xueqiu.com) discussions, designed for downstream sentiment analysis.
 
+中文文档: [README.zh-CN.md](README.zh-CN.md)
+
 Routes API calls through a real Chrome instance (via DrissionPage) to bypass the Aliyun WAF JS challenge that blocks plain `requests`. Layered architecture so storage, parsing, and fetching can each be swapped or extended without touching the rest.
 
 ---
@@ -13,7 +15,7 @@ Routes API calls through a real Chrome instance (via DrissionPage) to bypass the
 - **Two storage backends** — SQLite (default) for prototyping, PostgreSQL for production.
 - **Configuration driven** — YAML + env, three environments (dev / prod / default).
 - **Tested** — unit tests for parsers and storage, integration tests for the pipeline.
-- **CLI** — `xueqiu crawl stock`, `crawl hot`, `crawl until`, `export csv`, `db init`.
+- **CLI** — `xueqiu crawl stock`, `xueqiu crawl hot`, `xueqiu crawl until`, `xueqiu export csv`, `xueqiu db init`.
 - **Reserved extension points** — comments, user timeline, hot stream, NLP/sentiment.
 
 ---
@@ -97,7 +99,7 @@ Rules: parsers depend on nothing; storage depends on nothing crawler-specific; f
 ## Project layout
 
 ```
-xueqiu_crawler/
+snowroll/
 ├── configs/                  YAML config (default / dev / prod)
 ├── src/xueqiu/
 │   ├── browser/              Chrome lifecycle (DrissionPage)
@@ -182,4 +184,3 @@ make typecheck      # mypy
 ## License
 
 MIT.
-# snowroll
