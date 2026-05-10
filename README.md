@@ -1,4 +1,4 @@
-# Xueqiu Crawler
+# snowroll
 
 Engineering-grade scraper for [雪球 (xueqiu.com)](https://xueqiu.com) discussions, designed for downstream sentiment analysis.
 
@@ -23,8 +23,8 @@ Routes API calls through a real Chrome instance (via DrissionPage) to bypass the
 ### 1. Install
 
 ```bash
-git clone <repo-url>
-cd xueqiu_crawler
+git clone https://github.com/Luffy180910/snowroll
+cd snowroll
 
 # Pick one:
 make install         # base (sqlite only)
