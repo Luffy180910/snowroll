@@ -90,7 +90,7 @@ xueqiu export csv --out maotai.csv --symbol SH600519
 └─────────────────────────────────────────┘
 ```
 
-规则：parsers 不依赖其他模块；storage 不感知爬虫细节；fetchers 只负责请求与响应；pipeline 是三者唯一的交汇点。详见 [docs/architecture.md](docs/architecture.md)。
+规则：parsers 不依赖其他模块；storage 不感知爬虫细节；fetchers 只负责请求与响应；pipeline 是三者唯一的交汇点。详见 [docs/architecture.zh-CN.md](docs/architecture.zh-CN.md)。
 
 ---
 
